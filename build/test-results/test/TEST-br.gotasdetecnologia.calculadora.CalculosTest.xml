@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.gotasdetecnologia.calculadora.CalculosTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-11T13:26:10" hostname="DESKTOP-9K6R2JI" time="0.164">
+  <properties/>
+  <testcase name="verificaRaizQuadrada()" classname="br.gotasdetecnologia.calculadora.CalculosTest" time="0.164"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
