@@ -3,8 +3,6 @@ package br.gotasdetecnologia.calculadora;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class CalculosTest {
 
     // CENARIO DE TESTE
@@ -46,6 +44,16 @@ class CalculosTest {
     }
 
     @Test
+    public void verificaNumeroImpar() {
+
+        Calculos paraVerificar = new Calculos();
+
+        boolean informaImpar = paraVerificar.informaNumePar(3);
+
+        Assertions.assertFalse(informaImpar);
+    }
+
+    @Test
     public void verificaRaizQuadrada(){
 
         Calculos raizQuadrada = new Calculos();
@@ -55,4 +63,16 @@ class CalculosTest {
 
         Assertions.assertEquals(esperado, atual);
     }
+
+    @Test
+    public void verificaRaizQuadradaNegativo(){
+
+        Calculos raizQuadrada = new Calculos();
+
+        double atual = raizQuadrada.raizQuadrada(-10);
+        boolean teste = Double.isNaN(atual);
+
+        Assertions.assertTrue(teste);
+    }
+
 }

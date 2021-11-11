@@ -23,6 +23,9 @@ public class Calculos {
 
     public double raizQuadrada(double numero) {
 
+        if(Double.isNaN(numero)){
+            System.out.println("Insira um valor numerico valido!");
+        }
         return Math.sqrt(numero);
     }
 }
